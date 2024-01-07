@@ -282,5 +282,431 @@
             "age": ,
             "salary": 
         }
+    ],
+    "pacers": [
+        {
+            "id": 1,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 2,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 3,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 4,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 5,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 1,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 7,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 8,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 9,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 10,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 11,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 12,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 13,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 15,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        }
+    ], 
+    "pistons": [
+        {
+            "id": 1,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 2,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 3,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 4,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 5,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 1,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 7,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 8,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 9,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 10,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 11,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 12,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 13,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 15,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        }
+    ], 
+    "cavaliers": [
+        {
+            "id": 1,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 2,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 3,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 4,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 5,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 1,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 7,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 8,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 9,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 10,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 11,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 12,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 13,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        },
+        {
+            "id": 15,
+            "name": "",
+            "position": "",
+            "ppg": ,
+            "apg": ,
+            "rpg": ,
+            "age": ,
+            "salary": 
+        }
     ]
 }
