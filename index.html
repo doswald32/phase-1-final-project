@@ -13,7 +13,7 @@
         <main id="main" class="borders">
             
             <!--TEAM ONE POSITIONING CONTAINER-->
-            <div class="containers borders">
+            <div class="main-containers borders">
                 <!--TEAM ONE CONTAINER-->
                 <div id="team-1" class="team-container borders">
                     <!--TEAM SELECTOR CONTAINER-->
@@ -33,12 +33,12 @@
                     <!--TEAM PLAYER WINDOW-->
                     <div class="player-window borders" ></div>
                     <!--TEAM STATS WINDOW-->
-                    <div class="team-stats borders"></div>
+                    <div class="team-stats borders" ></div>
                 </div>
             </div>
             
             <!--TRADE POSITIONING CONTAINER-->
-            <div class="containers borders">
+            <div class="main-containers borders">
                 <!--TRADE CONTAINER-->
                 <div id="trade-container" class="borders">
                     <div id="buttons" class="borders" >
@@ -51,30 +51,37 @@
                         </div>
                     </div>
                     <div id="trade-block" class="borders">
-                        <div id="trade-block-1" class="borders" >
-
-                        </div>
-                        <div id="trade-block-2" class="borders" >
-                            
-                        </div>
+                        <div id="trade-block-1" class="borders" ></div>
+                        <div id="trade-block-2" class="borders" ></div>
+                    </div>
+                    <div id="trade-response-container" class="borders">
+                        <div id="trade-response" class="borders"></div>
                     </div>
                 </div>
             </div>
                 
             <!--TEAM TWO POSITIONING CONTAINER-->
-            <div class="containers borders">
+            <div class="main-containers borders">
+                <!--TEAM TWO CONTAINER-->
                 <div id="team-2" class="team-container borders">
-                    <!--need to update form action URL-->
-                    <form action="http://example.com/" class="team-selector">
-                        <label>Select team:&nbsp;</label> 
-                        <select name="team-1">
-                            <option value="Bucks">Milwaukee Bucks</option>
-                            <option value="Bulls">Chicago Bulls</option>
-                            <option value="Cavaliers">Cleveland Cavaliers</option>
-                            <option value="Pacers">Indian Pacers</option>
-                            <option value="Pistons">Detroit Pistons</option>
-                        </select>
-                    </form>
+                    <!--TEAM SELECTOR CONTAINER-->
+                    <div id="team-select-container" class="borders" >
+                        <!--need to update form action URL-->
+                        <form action="http://example.com/" class="team-selector">
+                            <label>Select team:&nbsp;</label> 
+                            <select name="team-1">
+                                <option value="Bucks">Milwaukee Bucks</option>
+                                <option value="Bulls">Chicago Bulls</option>
+                                <option value="Cavaliers">Cleveland Cavaliers</option>
+                                <option value="Pacers">Indian Pacers</option>
+                                <option value="Pistons">Detroit Pistons</option>
+                            </select>
+                        </form>
+                    </div>
+                    <!--TEAM PLAYER WINDOW-->
+                    <div class="player-window borders" ></div>
+                    <!--TEAM STATS WINDOW-->
+                    <div class="team-stats borders" ></div>
                 </div>
             </div>
         </main>

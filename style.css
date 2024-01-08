@@ -18,9 +18,10 @@
     display: flex;
     justify-content: center;
     width: 99%;
+    margin: 5px;
 }
 
-.containers {
+.main-containers {
     margin: 5px auto;
 }
 
@@ -28,26 +29,40 @@
     display: inline-block;
     width: auto;
     height: 500px;
-    margin: 5px auto;
+    margin: 5px;
+}
+
+#team-select-container {
+    margin: 5px;
+}
+
+#team-selector {
+    text-align: center;
+    margin: 5px;
+}
+
+.player-window {
+    margin: 5px;
+    height: 70%;
+}
+
+.team-stats {
+    margin: 5px;
+    height: 15%;
 }
 
 #trade-container {
     display: inline-block;
     width: auto;
     height: 500px;
-    margin: 5px auto;
-}
-
-#team-selector {
-    text-align: center;
-    margin: 5px auto;
+    margin: 5px;
 }
 
 #buttons {
     display: flex;
     justify-content: center;
-    margin: 5px auto;
-    padding: 5px auto;
+    margin: 5px;
+    padding: 5px;
 }
 
 .button {
@@ -58,18 +73,31 @@
 #trade-block {
     display: flex;
     justify-content: center;
+    margin: 5px;
 }
 
 #trade-block-1 {
     display: inline-block;
     width: 40%;
     height: 100px;
-    margin: 2%;
+    margin: 5px auto;
 }
 
 #trade-block-2 {
     display: inline-block;
     width: 40%;
     height: 100px;
-    margin: 2%;
+    margin: 5px auto;
+}
+
+#trade-response-container {
+    margin: 5px;
+    height: 50%;
+    vertical-align: middle;
+}
+
+#trade-response {
+    margin: 5px;
+    height: 45%;
+    vertical-align: middle;
 }
