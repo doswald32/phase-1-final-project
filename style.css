@@ -104,3 +104,11 @@
     height: 45%;
     vertical-align: middle;
 }
+
+.card {
+    display: inline-block;
+}
+
+.card-content {
+    display: inline-table;
+}
