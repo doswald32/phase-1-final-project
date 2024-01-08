@@ -3,12 +3,8 @@
     border-width: 2px;
 }
 
-#bulk-container {
-    position: absolute;
-    background-color: lightgray;
-    width: 98%;
-    height: 80%;
-    overflow: auto;
+#header {
+    width: 99%;
 }
 
 #title {
@@ -18,33 +14,62 @@
     margin-right: 10px;
 }
 
+#main {
+    display: flex;
+    justify-content: center;
+    width: 99%;
+}
+
+.containers {
+    margin: 5px auto;
+}
+
 .team-container {
     display: inline-block;
-    width: 25%;
-    height: 95%;
-    background-color: red;
-    margin: 10px;
+    width: auto;
+    height: 500px;
+    margin: 5px auto;
 }
 
 #trade-container {
     display: inline-block;
-    width: 43%;
-    height: 95%;
-    margin: 10px;
+    width: auto;
+    height: 500px;
+    margin: 5px auto;
 }
 
 #team-selector {
     text-align: center;
-    width: 98%;
-    padding: auto;
-
+    margin: 5px auto;
 }
 
-form {
-    margin-top: 5px;
-    margin-bottom: 5px;
+#buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: 95%;
+    margin: 5px auto;
+    padding: 5px auto;
+}
+
+.button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#trade-block {
+    display: flex;
+    justify-content: center;
+}
+
+#trade-block-1 {
+    display: inline-block;
+    width: 40%;
+    height: 100px;
+    margin: 2%;
+}
+
+#trade-block-2 {
+    display: inline-block;
+    width: 40%;
+    height: 100px;
+    margin: 2%;
 }
