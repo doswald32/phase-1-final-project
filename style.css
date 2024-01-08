@@ -4,9 +4,11 @@
 }
 
 #bulk-container {
-    margin: auto;
+    position: absolute;
+    background-color: lightgray;
     width: 98%;
-    height: 550px;
+    height: 80%;
+    overflow: auto;
 }
 
 #title {
@@ -17,19 +19,32 @@
 }
 
 .team-container {
+    display: inline-block;
     width: 25%;
-    height: 500px;
+    height: 95%;
     background-color: red;
-    float: left;
     margin: 10px;
 }
 
 #trade-container {
-    margin-top: 20px;
+    display: inline-block;
     width: 43%;
-    height: 500px;
-    float: left;
+    height: 95%;
     margin: 10px;
 }
 
+#team-selector {
+    text-align: center;
+    width: 98%;
+    padding: auto;
 
+}
+
+form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 95%;
+}

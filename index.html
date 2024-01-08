@@ -4,18 +4,52 @@
         <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     <body>
+        <!--HEADER-->
         <div id="header" class="borders">
             <h1 id="title" class="borders">NBA Trade Simulator</h1>
         </div>
+        
+        <!--BULK CONTAINER FOR EVERYTHING UNDER HEADER-->
         <div id="bulk-container" class="borders">
+            
+            <!--TEAM ONE CONTAINER-->
             <div id="team-1" class="team-container borders">
-                
+                <!--need to update form action URL-->
+                <form action="http://example.com/" class="team-selector">
+                    <label>Select team:</label> 
+                    <select name="team-1">
+                        <option value="Bucks">Milwaukee Bucks</option>
+                        <option value="Bulls">Chicago Bulls</option>
+                        <option value="Cavaliers">Cleveland Cavaliers</option>
+                        <option value="Pacers">Indian Pacers</option>
+                        <option value="Pistons">Detroit Pistons</option>
+                    </select>
+                </form>
             </div>
+            
+            <!--TRADE CONTAINER-->
             <div id="trade-container" class="borders">
-
+                <div class="form">    
+                <!--need to update form action URL-->
+                    <form id="reset" action="http://example.com/">
+                        <button>Reset</button>
+                    </form>
+                </div>
             </div>
+            
+            <!--TEAM TWO CONTAINER-->
             <div id="team-2" class="team-container borders">
-                
+                <!--need to update form action URL-->
+                <form action="http://example.com/" class="team-selector">
+                    <label>Select team:</label> 
+                    <select name="team-1">
+                        <option value="Bucks">Milwaukee Bucks</option>
+                        <option value="Bulls">Chicago Bulls</option>
+                        <option value="Cavaliers">Cleveland Cavaliers</option>
+                        <option value="Pacers">Indian Pacers</option>
+                        <option value="Pistons">Detroit Pistons</option>
+                    </select>
+                </form>
             </div>
         </div>
     </body>
