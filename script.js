@@ -3,11 +3,15 @@ function renderOnePlayer(player){
     //build player card
     let card = document.createElement('li');
     card.className = 'card';
+    //NEED TO UPDATE FORM ACTION WITH APPROPRIATE URL
     card.innerHTML = `
     <div class="card-container borders">
         <img id="player-image" src="${player.imageURL}">
+        <form action="http://www.example.com/profile.php">
+            <input id="player-select-checkbox" type="checkbox" name="player-select" value="player-select" />
+        </form>
         <div class="card-content">
-            <p>${player.name}, ${player.position}, Age: ${player.age}</p>
+            <p id="player-name">${player.name}, ${player.position}, Age: ${player.age}</p>
             <p>${player.ppg}ppg, ${player.apg}apg, ${player.rpg}rpg, Salary: $${player.salary}M</p>
         </div>
     </div>
