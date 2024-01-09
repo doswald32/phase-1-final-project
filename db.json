@@ -164,7 +164,8 @@
             "apg": 6.8,
             "rpg": 4.4,
             "age": 33,
-            "salary": 45.64
+            "salary": 45.64,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6606.png&h=80&w=110&scale=crop"
         },
         {
             "id": 2,
@@ -174,7 +175,8 @@
             "apg": 5.8,
             "rpg": 11.4,
             "age": 29,
-            "salary": 45.64
+            "salary": 45.64,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3032977.png&h=80&w=110&scale=crop"
         },
         {
             "id": 3,
@@ -184,7 +186,8 @@
             "apg": 4.8,
             "rpg": 4.5,
             "age": 32,
-            "salary": 29.32
+            "salary": 29.32,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6609.png&h=80&w=110&scale=crop"
         },
         {
             "id": 4,
@@ -194,7 +197,8 @@
             "apg": 1.3,
             "rpg": 5.0,
             "age": 35,
-            "salary": 25.00
+            "salary": 25.00,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3448.png&h=80&w=110&scale=crop"
         },
         {
             "id": 5,
@@ -204,7 +208,8 @@
             "apg": 1.1,
             "rpg": 6.7,
             "age": 28,
-            "salary": 11.71
+            "salary": 11.71,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064482.png&h=80&w=110&scale=crop"
         },
         {
             "id": 6,
@@ -214,7 +219,8 @@
             "apg": 1.9,
             "rpg": 3.7,
             "age": 30,
-            "salary": 9.42
+            "salary": 9.42,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2578239.png&h=80&w=110&scale=crop"
         },
         {
             "id": 7,
@@ -224,7 +230,8 @@
             "apg": 2.5,
             "rpg": 1.2,
             "age": 29,
-            "salary": 6.50
+            "salary": 6.50,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064230.png&h=80&w=110&scale=crop"
         },
         {
             "id": 8,
@@ -234,7 +241,8 @@
             "apg": 0.7,
             "rpg": 2.5,
             "age": 23,
-            "salary": 2.61
+            "salary": 2.61,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432179.png&h=80&w=110&scale=crop"
         },
         {
             "id": 9,
@@ -244,7 +252,8 @@
             "apg": 0.0,
             "rpg": 0.5,
             "age": 22,
-            "salary": 2.32
+            "salary": 2.32,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4683749.png&h=80&w=110&scale=crop"
         },
         {
             "id": 10,
@@ -254,7 +263,8 @@
             "apg": 1.7,
             "rpg": 3.9,
             "age": 33,
-            "salary": 2.02
+            "salary": 2.02,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6581.png&h=80&w=110&scale=crop"
         },
         {
             "id": 11,
@@ -264,7 +274,8 @@
             "apg": 1.3,
             "rpg": 4.2,
             "age": 27,
-            "salary": 2.02
+            "salary": 2.02,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3907822.png&h=80&w=110&scale=crop"
         },
         {
             "id": 12,
@@ -274,7 +285,8 @@
             "apg": 0.2,
             "rpg": 0.2,
             "age": 35,
-            "salary": 2.02
+            "salary": 2.02,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3447.png&h=80&w=110&scale=crop"
         },
         {
             "id": 13,
@@ -284,7 +296,8 @@
             "apg": 0.5,
             "rpg": 0.5,
             "age": 31,
-            "salary": 2.02
+            "salary": 2.02,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3102533.png&h=80&w=110&scale=crop"
         },
         {
             "id": 14,
@@ -294,7 +307,8 @@
             "apg": 0.6,
             "rpg": 0.8,
             "age": 24,
-            "salary": 1.80
+            "salary": 1.80,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4397475.png&h=80&w=110&scale=crop"
         },
         {
             "id": 15,
@@ -304,7 +318,8 @@
             "apg": 0.4,
             "rpg": 0.9,
             "age": 20,
-            "salary": 1.12
+            "salary": 1.12,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4433622.png&h=80&w=110&scale=crop"
         }
     ],
     "pacers": [
@@ -316,7 +331,8 @@
             "apg": 2.8,
             "rpg": 4.6,
             "age": 27,
-            "salary": 22.00
+            "salary": 22.00,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4065670.png&h=80&w=110&scale=crop"
         },
         {
             "id": 2,
@@ -326,7 +342,8 @@
             "apg": 1.2,
             "rpg": 7.3,
             "age": 27,
-            "salary": 20.98
+            "salary": 20.98,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3133628.png&h=80&w=110&scale=crop"
         },
         {
             "id": 3,
@@ -336,7 +353,8 @@
             "apg": 2.4,
             "rpg": 3.3,
             "age": 31,
-            "salary": 19.28
+            "salary": 19.28,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2990984.png&h=80&w=110&scale=crop"
         },
         {
             "id": 4,
@@ -346,7 +364,8 @@
             "apg": 4.0,
             "rpg": 1.8,
             "age": 31,
-            "salary": 8.70
+            "salary": 8.70,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2530530.png&h=80&w=110&scale=crop"
         },
         {
             "id": 5,
@@ -356,7 +375,8 @@
             "apg": 2.0,
             "rpg": 3.8,
             "age": 21,
-            "salary": 6.91
+            "salary": 6.91,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4683634.png&h=80&w=110&scale=crop"
         },
         {
             "id": 6,
@@ -366,7 +386,8 @@
             "apg": 1.4,
             "rpg": 4.0,
             "age": 25,
-            "salary": 6.80
+            "salary": 6.80,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4278355.png&h=80&w=110&scale=crop"
         },
         {
             "id": 7,
@@ -376,7 +397,8 @@
             "apg": 1.1,
             "rpg": 1.2,
             "age": 20,
-            "salary": 6.06
+            "salary": 6.06,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/5106060.png&h=80&w=110&scale=crop"
         },
         {
             "id": 8,
@@ -386,7 +408,8 @@
             "apg": 12.8,
             "rpg": 4.2,
             "age": 23,
-            "salary": 5.81
+            "salary": 5.81,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4396993.png&h=80&w=110&scale=crop"
         },
         {
             "id": 9,
@@ -396,7 +419,8 @@
             "apg": 1.1,
             "rpg": 3.2,
             "age": 22,
-            "salary": 5.63
+            "salary": 5.63,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4396909.png&h=80&w=110&scale=crop"
         },
         {
             "id": 10,
@@ -406,7 +430,8 @@
             "apg": 1.0,
             "rpg": 5.1,
             "age": 23,
-            "salary": 5.60
+            "salary": 5.60,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4397189.png&h=80&w=110&scale=crop"
         },
         {
             "id": 11,
@@ -416,7 +441,8 @@
             "apg": 1.0,
             "rpg": 1.8,
             "age": 25,
-            "salary": 3.00
+            "salary": 3.00,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4277883.png&h=80&w=110&scale=crop"
         },
         {
             "id": 12,
@@ -426,7 +452,8 @@
             "apg": 0.9,
             "rpg": 4.3,
             "age": 21,
-            "salary": 2.70
+            "salary": 2.70,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432170.png&h=80&w=110&scale=crop"
         },
         {
             "id": 13,
@@ -436,7 +463,8 @@
             "apg": 0.6,
             "rpg": 0.6,
             "age": 22,
-            "salary": 2.54
+            "salary": 2.54,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4433076.png&h=80&w=110&scale=crop"
         },
         {
             "id": 15,
@@ -446,7 +474,8 @@
             "apg": 4.0,
             "rpg": 1.8,
             "age": 23,
-            "salary": 2.13
+            "salary": 2.13,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4395712.png&h=80&w=110&scale=crop"
         }
     ], 
     "pistons": [
@@ -458,7 +487,8 @@
             "apg": 2.9,
             "rpg": 3.9,
             "age": 34,
-            "salary": 20.00
+            "salary": 20.00,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3593.png&h=80&w=110&scale=crop"
         },
         {
             "id": 2,
@@ -468,7 +498,8 @@
             "apg": 0.8,
             "rpg": 0.9,
             "age": 32,
-            "salary": 19.93
+            "salary": 19.93,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2528794.png&h=80&w=110&scale=crop"
         },
         {
             "id": 3,
@@ -478,7 +509,8 @@
             "apg": 1.0,
             "rpg": 4.6,
             "age": 24,
-            "salary": 12.50
+            "salary": 12.50,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4277848.png&h=80&w=110&scale=crop"
         },
         {
             "id": 4,
@@ -488,7 +520,8 @@
             "apg": 0.6,
             "rpg": 4.3,
             "age": 22,
-            "salary": 12.12
+            "salary": 12.12,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432808.png&h=80&w=110&scale=crop"
         },
         {
             "id": 5,
@@ -498,7 +531,8 @@
             "apg": 7.4,
             "rpg": 4.1,
             "age": 22,
-            "salary": 11.06
+            "salary": 11.06,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432166.png&h=80&w=110&scale=crop"
         },
         {
             "id": 6,
@@ -508,7 +542,8 @@
             "apg": 1.4,
             "rpg": 2.3,
             "age": 32,
-            "salary": 10.49
+            "salary": 10.49,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6429.png&h=80&w=110&scale=crop"
         },
         {
             "id": 7,
@@ -518,7 +553,8 @@
             "apg": 5.3,
             "rpg": 3.4,
             "age": 28,
-            "salary": 9.80
+            "salary": 9.80,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3059310.png&h=80&w=110&scale=crop"
         },
         {
             "id": 8,
@@ -528,7 +564,8 @@
             "apg": 2.1,
             "rpg": 6.9,
             "age": 20,
-            "salary": 7.98
+            "salary": 7.98,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4684742.png&h=80&w=110&scale=crop"
         },
         {
             "id": 9,
@@ -538,7 +575,8 @@
             "apg": 3.1,
             "rpg": 3.5,
             "age": 21,
-            "salary": 7.64
+            "salary": 7.64,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4433218.png&h=80&w=110&scale=crop"
         },
         {
             "id": 10,
@@ -548,7 +586,8 @@
             "apg": 4.3,
             "rpg": 2.9,
             "age": 22,
-            "salary": 7.41
+            "salary": 7.41,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4683024.png&h=80&w=110&scale=crop"
         },
         {
             "id": 11,
@@ -558,7 +597,8 @@
             "apg": 1.7,
             "rpg": 7.0,
             "age": 22,
-            "salary": 5.27
+            "salary": 5.27,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432810.png&h=80&w=110&scale=crop"
         },
         {
             "id": 12,
@@ -568,7 +608,8 @@
             "apg": 2.5,
             "rpg": 11.8,
             "age": 20,
-            "salary": 4.33
+            "salary": 4.33,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4433621.png&h=80&w=110&scale=crop"
         },
         {
             "id": 13,
@@ -578,7 +619,8 @@
             "apg": 2.3,
             "rpg": 1.5,
             "age": 23,
-            "salary": 2.62
+            "salary": 2.62,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432107.png&h=80&w=110&scale=crop"
         },
         {
             "id": 15,
@@ -588,7 +630,8 @@
             "apg": 0.7,
             "rpg": 2.2,
             "age": 24,
-            "salary": 1.85
+            "salary": 1.85,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4278075.png&h=80&w=110&scale=crop"
         }
     ], 
     "cavaliers": [
@@ -600,7 +643,8 @@
             "apg": 5.9,
             "rpg": 2.8,
             "age": 23,
-            "salary": 34.00
+            "salary": 34.00,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4396907.png&h=80&w=110&scale=crop"
         },
         {
             "id": 2,
@@ -610,7 +654,8 @@
             "apg": 5.6,
             "rpg": 5.4,
             "age": 27,
-            "salary": 33.16
+            "salary": 33.16,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3908809.png&h=80&w=110&scale=crop"
         },
         {
             "id": 3,
@@ -620,7 +665,8 @@
             "apg": 3.0,
             "rpg": 9.7,
             "age": 25,
-            "salary": 20.00
+            "salary": 20.00,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4066328.png&h=80&w=110&scale=crop"
         },
         {
             "id": 4,
@@ -630,7 +676,8 @@
             "apg": 4.2,
             "rpg": 3.5,
             "age": 29,
-            "salary": 15.38
+            "salary": 15.38,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2991043.png&h=80&w=110&scale=crop"
         },
         {
             "id": 5,
@@ -640,7 +687,8 @@
             "apg": 3.9,
             "rpg": 5.1,
             "age": 27,
-            "salary": 14.49
+            "salary": 14.49,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4065778.png&h=80&w=110&scale=crop"
         },
         {
             "id": 6,
@@ -650,7 +698,8 @@
             "apg": 2.1,
             "rpg": 3.3,
             "age": 22,
-            "salary": 8.92
+            "salary": 8.92,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432822.png&h=80&w=110&scale=crop"
         },
         {
             "id": 7,
@@ -660,7 +709,8 @@
             "apg": 2.9,
             "rpg": 10.5,
             "age": 22,
-            "salary": 8.88
+            "salary": 8.88,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432158.png&h=80&w=110&scale=crop"
         },
         {
             "id": 8,
@@ -670,7 +720,8 @@
             "apg": 1.2,
             "rpg": 3.7,
             "age": 30,
-            "salary": 8.80
+            "salary": 8.80,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2990969.png&h=80&w=110&scale=crop"
         },
         {
             "id": 9,
@@ -680,7 +731,8 @@
             "apg": 0.9,
             "rpg": 4.7,
             "age": 27,
-            "salary": 5.71
+            "salary": 5.71,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3912848.png&h=80&w=110&scale=crop"
         },
         {
             "id": 10,
@@ -690,7 +742,8 @@
             "apg": 0.3,
             "rpg": 1.1,
             "age": 28,
-            "salary": 2.59
+            "salary": 2.59,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064559.png&h=80&w=110&scale=crop"
         },
         {
             "id": 11,
@@ -700,7 +753,8 @@
             "apg": 1.5,
             "rpg": 0.5,
             "age": 26,
-            "salary": 2.44
+            "salary": 2.44,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4065733.png&h=80&w=110&scale=crop"
         },
         {
             "id": 12,
@@ -710,7 +764,8 @@
             "apg": 1.0,
             "rpg": 3.8,
             "age": 32,
-            "salary": 2.02
+            "salary": 2.02,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6474.png&h=80&w=110&scale=crop"
         },
         {
             "id": 13,
@@ -720,7 +775,8 @@
             "apg": 1.3,
             "rpg": 1.5,
             "age": 27,
-            "salary": 1.99
+            "salary": 1.99,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4066757.png&h=80&w=110&scale=crop"
         },
         {
             "id": 14,
@@ -730,7 +786,8 @@
             "apg": 3.3,
             "rpg": 2.8,
             "age": 23,
-            "salary": 0.56
+            "salary": 0.56,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4701233.png&h=80&w=110&scale=crop"
         }, 
         {
             "id": 15,
@@ -740,7 +797,8 @@
             "apg": 0.6,
             "rpg": 1.0,
             "age": 19,
-            "salary": 0.56
+            "salary": 0.56,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4433620.png&h=80&w=110&scale=crop"
         }
     ]
 }
