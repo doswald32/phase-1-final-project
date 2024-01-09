@@ -37,6 +37,7 @@
 
 #team-select-container {
     margin: 5px;
+    overflow: auto;
 }
 
 #team-selector {
@@ -45,6 +46,7 @@
 }
 
 .player-window {
+    overflow: auto;
     margin: 5px;
     height: 70%;
 }
@@ -105,10 +107,25 @@
     vertical-align: middle;
 }
 
+.card-container {
+    margin: 5px;
+    padding: 3px;
+    width: 98%;
+}
+
 .card {
-    display: inline-block;
+    list-style: none;
 }
 
 .card-content {
-    display: inline-table;
+    line-height: 10px;
+}
+
+#player-image {
+    border-style: outset;
+    float: left;
+    margin: 5px;
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
 }

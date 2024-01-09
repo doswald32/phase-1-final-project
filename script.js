@@ -4,10 +4,12 @@ function renderOnePlayer(player){
     let card = document.createElement('li');
     card.className = 'card';
     card.innerHTML = `
-    <img src="${player.imageURL}">
-    <div class="card-content">
-        <p>${player.name}, ${player.position}, Age: ${player.age}</p>
-        <p>ppg: ${player.ppg} apg: ${player.apg} rpg: ${player.rpg} Annual Salary: $${player.salary} million</p>
+    <div class="card-container borders">
+        <img id="player-image" src="${player.imageURL}">
+        <div class="card-content">
+            <p>${player.name}, ${player.position}, Age: ${player.age}</p>
+            <p>${player.ppg}ppg, ${player.apg}apg, ${player.rpg}rpg, Salary: $${player.salary}M</p>
+        </div>
     </div>
     `
     //add player card to DOM
