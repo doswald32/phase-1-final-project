@@ -60,5 +60,14 @@ function getTeamStats(team) {
 // getTeamPlayers('Pistons');
 // getTeamStats('Pistons');
 
-const teamSelector = document.getElementById("team-selector-1");
-formSelector.addEventListener('')
+const teamSelector = document.querySelector(".select");
+teamSelector.addEventListener("change", function(e, name){
+        name = e.target.value;
+        let statsWindow = document.querySelector('.team-stats');
+        statsWindow.innerHTML = '';
+        getTeamPlayers(name);
+        let playerWindow = document.querySelector('.player-window');
+        playerWindow.innerHTML = '';
+        getTeamStats(name);
+    });
+
