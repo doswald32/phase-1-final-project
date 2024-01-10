@@ -37,28 +37,28 @@ function getTeamStats(team) {
     .then(function(teamData){
         teamData.forEach(function(player){
             teamPoints = teamPoints + player.ppg;
-            // console.log(teamPoints);
             teamAssists += player.apg;
             teamRebounds += player.rpg;
             teamAge += player.age;
             teamSalary += player.salary;
         });
         let teamStats = document.createElement('div');
-        //teamStats.className = 'team-stats';
         teamStats.innerHTML = `
         <div class="stats-container borders">
             <p>Team: ${team}</p>
             <p>Average age: ${(Math.round(teamAge / teamData.length))}</p>
-            <p>Stats - ppg: ${teamPoints}, apg: ${teamAssists}, rpg: ${teamRebounds}</p>
+            <p>Stats - ppg: ${(Math.round(teamPoints * 100) / 100)}, apg: ${(Math.round(teamAssists * 100) / 100)}, rpg: ${(Math.round(teamRebounds * 100) / 100)}</p>
             <p>Team Salary: $${(Math.round(teamSalary * 100) / 100)}M</p>
         </div>
         `
         //add team stats to DOM
         let statsWindow = document.querySelector('.team-stats');
-        console.log(statsWindow);
         statsWindow.appendChild(teamStats);
         });
 };
 
-getTeamPlayers('Bulls');
-getTeamStats('Bulls');
+// getTeamPlayers('Pistons');
+// getTeamStats('Pistons');
+
+const teamSelector = document.getElementById("team-selector-1");
+formSelector.addEventListener('')
