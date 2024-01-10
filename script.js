@@ -1,4 +1,4 @@
-function renderPlayers(player){
+function renderPlayers(player, num){
     //build player card
     let card = document.createElement('li');
     card.className = 'card';
@@ -16,17 +16,17 @@ function renderPlayers(player){
     </div>
     `
     //add player card to DOM
-    let playerWindow = document.querySelector('.player-window');
+    let playerWindow = document.querySelector(`#player-window-${num}`);
     playerWindow.appendChild(card);
 };
 
-function getTeamPlayers(team) {
+function getTeamPlayers(team, num) {
     fetch(`http://127.0.0.1:3000/${team}`)
     .then(res => res.json())
-    .then(teamData => teamData.forEach(player => renderPlayers(player)))
+    .then(teamData => teamData.forEach(player => renderPlayers(player, num)))
 };
 
-function getTeamStats(team) {
+function getTeamStats(team, num) {
     let teamPoints = 0;
     let teamAssists = 0;
     let teamRebounds = 0;
@@ -52,22 +52,29 @@ function getTeamStats(team) {
         </div>
         `
         //add team stats to DOM
-        let statsWindow = document.querySelector('.team-stats');
+        let statsWindow = document.querySelector(`#team-stats-${num}`);
         statsWindow.appendChild(teamStats);
         });
 };
 
-// getTeamPlayers('Pistons');
-// getTeamStats('Pistons');
+const teamSelectorOne = document.querySelector("#select-1");
+teamSelectorOne.addEventListener("change", function(e, team, num = 1){
+    team = e.target.value;
+    let statsWindow = document.querySelector(`#team-stats-${num}`);
+    statsWindow.innerHTML = '';
+    getTeamPlayers(team, num);
+    let playerWindow = document.querySelector(`#player-window-${num}`);
+    playerWindow.innerHTML = '';
+    getTeamStats(team, num);
+});
 
-const teamSelector = document.querySelector(".select");
-teamSelector.addEventListener("change", function(e, name){
-        name = e.target.value;
-        let statsWindow = document.querySelector('.team-stats');
-        statsWindow.innerHTML = '';
-        getTeamPlayers(name);
-        let playerWindow = document.querySelector('.player-window');
-        playerWindow.innerHTML = '';
-        getTeamStats(name);
-    });
-
+const teamSelectorTwo = document.querySelector("#select-2");
+teamSelectorTwo.addEventListener("change", function(e, team, num = 2){
+    team = e.target.value;
+    let statsWindow = document.querySelector(`#team-stats-${num}`);
+    statsWindow.innerHTML = '';
+    getTeamPlayers(team, num);
+    let playerWindow = document.querySelector(`#player-window-${num}`);
+    playerWindow.innerHTML = '';
+    getTeamStats(team, num);
+});
