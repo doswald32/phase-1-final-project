@@ -156,6 +156,6 @@
     font-weight: bold;
 }
 
-#player-select-checkbox {
+.player-select-checkbox {
     float: right;
 }

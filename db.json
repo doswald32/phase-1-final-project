@@ -153,6 +153,17 @@
             "age": 24,
             "salary": 0.56,
             "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4438552.png&h=80&w=110&scale=crop"
+        },
+        {
+            "id": 15,
+            "name": "Lonzo Ball",
+            "position": "PG",
+            "ppg": 0,
+            "apg": 0,
+            "rpg": 0,
+            "age": 26,
+            "salary": 20.47,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4066421.png&h=80&w=110&scale=crop"
         }
     ],
     "Bucks": [
@@ -467,7 +478,7 @@
             "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4433076.png&h=80&w=110&scale=crop"
         },
         {
-            "id": 15,
+            "id": 14,
             "name": "Andrew Nembhard",
             "position": "PG",
             "ppg": 7.7,
@@ -476,6 +487,17 @@
             "age": 23,
             "salary": 2.13,
             "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4395712.png&h=80&w=110&scale=crop"
+        },
+        {
+            "id": 15,
+            "name": "James Johnson",
+            "position": "PF",
+            "ppg": 1.0,
+            "apg": 1.3,
+            "rpg": 1.0,
+            "age": 36,
+            "salary": 1.41,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3999.png&h=80&w=110&scale=crop"
         }
     ], 
     "Pistons": [
@@ -623,7 +645,7 @@
             "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432107.png&h=80&w=110&scale=crop"
         },
         {
-            "id": 15,
+            "id": 14,
             "name": "Kevin Knox II",
             "position": "SF",
             "ppg": 7.8,
@@ -632,6 +654,17 @@
             "age": 24,
             "salary": 1.85,
             "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4278075.png&h=80&w=110&scale=crop"
+        },
+        {
+            "id": 15,
+            "name": "Isaiah Livers",
+            "position": "PF",
+            "ppg": 5.1,
+            "apg": 1.1,
+            "rpg": 2.2,
+            "age": 25,
+            "salary": 1.84,
+            "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4277957.png&h=80&w=110&scale=crop"
         }
     ], 
     "Cavaliers": [
