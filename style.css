@@ -4,6 +4,7 @@
 }
 
 #header {
+    height: 12vh;
     width: 99%;
 }
 
@@ -17,6 +18,7 @@
 #main {
     display: flex;
     justify-content: center;
+    height: 84vh;
     width: 99%;
     margin: 5px;
 }
@@ -31,7 +33,7 @@
 .team-container {
     display: inline-block;
     width: 98%;
-    height: 500px;
+    height: 98%;
     margin: 5px;
 }
 
@@ -53,7 +55,16 @@
 
 .team-stats {
     margin: 5px;
-    height: 15%;
+    height: 22%;
+    line-height: 5px;
+    overflow: auto;
+}
+
+.stats-container {
+    margin: 5px;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
 }
 
 #trade-container {

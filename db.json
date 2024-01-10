@@ -1,5 +1,5 @@
 {
-    "bulls": [
+    "Bulls": [
         {
             "id": 1,
             "name": "Demar DeRozan",
@@ -155,7 +155,7 @@
             "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4438552.png&h=80&w=110&scale=crop"
         }
     ],
-    "bucks": [
+    "Bucks": [
         {
             "id": 1,
             "name": "Damian Lillard",
@@ -322,7 +322,7 @@
             "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4433622.png&h=80&w=110&scale=crop"
         }
     ],
-    "pacers": [
+    "Pacers": [
         {
             "id": 1,
             "name": "Bruce Brown",
@@ -478,7 +478,7 @@
             "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4395712.png&h=80&w=110&scale=crop"
         }
     ], 
-    "pistons": [
+    "Pistons": [
         {
             "id": 1,
             "name": "Bojan Bogdanovic",
@@ -634,7 +634,7 @@
             "imageURL": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4278075.png&h=80&w=110&scale=crop"
         }
     ], 
-    "cavaliers": [
+    "Cavaliers": [
         {
             "id": 1,
             "name": "Darius Garland",

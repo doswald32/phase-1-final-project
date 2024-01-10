@@ -46,12 +46,10 @@ function getTeamStats(team) {
         let teamStats = document.createElement('div');
         //teamStats.className = 'team-stats';
         teamStats.innerHTML = `
-        <div>
+        <div class="stats-container borders">
             <p>Team: ${team}</p>
             <p>Average age: ${(Math.round(teamAge / teamData.length))}</p>
-            <p>Points per game: ${teamPoints}</p>
-            <p>Assists per game: ${teamAssists}</p>
-            <p>Rebounds per game: ${teamRebounds}</p>
+            <p>Stats - ppg: ${teamPoints}, apg: ${teamAssists}, rpg: ${teamRebounds}</p>
             <p>Team Salary: $${(Math.round(teamSalary * 100) / 100)}M</p>
         </div>
         `
@@ -62,5 +60,5 @@ function getTeamStats(team) {
         });
 };
 
-getTeamPlayers('bulls');
-getTeamStats('bulls');
+getTeamPlayers('Bulls');
+getTeamStats('Bulls');
