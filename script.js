@@ -18,6 +18,9 @@ function renderPlayers(team, player, num){
     //add player card to DOM
     let playerWindow = document.querySelector(`#player-window-${num}`);
     playerWindow.appendChild(card);
+
+    //add event listner to card
+    card.addEventListener('click', () => console.log("test"));
 };
 
 function getTeamPlayers(team, num) {
@@ -79,13 +82,13 @@ teamSelectorTwo.addEventListener("change", function(e, team, num = 2){
     getTeamStats(team, num);
 });
 
-function checkboxListener(team) {
-    for (let i = 1; i <= 15; i++) {
-        document.getElementById(`${team}-player-select-checkbox-${i}`).addEventListener('click', () => console.log('test'))
-    }
-};
 
-checkboxListener('Bulls');
-
-// let card = document.getElementById('player-select-checkbox');
-// card.addEventListener('click', () => console.log('testing'));
+let tradeButton = document.getElementById("trade-button");
+tradeButton.addEventListener('click', function() {
+    let playerCheckboxes = document.querySelectorAll(".player-select-checkbox");
+    for (let checkbox of playerCheckboxes) {
+        if (checkbox.checked === true) {
+            console.log(checkbox.parentElement.parentElement);
+        }
+    };
+});
