@@ -11,7 +11,7 @@ function renderPlayers(team, player, num){
         </form>
         <div class="card-content">
             <p>${player.name}, ${player.position}, Age: ${player.age}</p>
-            <p>${player.ppg}ppg, ${player.apg}apg, ${player.rpg}rpg, Salary: $${player.salary}M</p>
+            <p>${player.ppg}ppg, ${player.apg}apg, ${player.rpg}rpg, Salary: $<span id="salary">${player.salary}</span>M</p>
         </div>
     </div>
     `
@@ -20,7 +20,7 @@ function renderPlayers(team, player, num){
     playerWindow.appendChild(card);
 
     //add event listner to card
-    card.addEventListener('click', () => console.log("test"));
+    //card.addEventListener('click', () => console.log("test"));
 };
 
 function getTeamPlayers(team, num) {
@@ -86,9 +86,13 @@ teamSelectorTwo.addEventListener("change", function(e, team, num = 2){
 let tradeButton = document.getElementById("trade-button");
 tradeButton.addEventListener('click', function() {
     let playerCheckboxes = document.querySelectorAll(".player-select-checkbox");
+    let salaryToTrade = 0;
     for (let checkbox of playerCheckboxes) {
         if (checkbox.checked === true) {
-            console.log(checkbox.parentElement.parentElement);
-        }
+            let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
+            let playerSalaryInt = parseInt(playerSalary);
+            salaryToTrade = salaryToTrade + playerSalaryInt;
+        };
     };
+    console.log(salaryToTrade);
 });
