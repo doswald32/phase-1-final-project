@@ -10,7 +10,7 @@ function renderPlayers(team, player, num){
         </form>
         <div class="card-content">
             <p>${player.name}, ${player.position}, Age: ${player.age}</p>
-            <p>${player.ppg}ppg, ${player.apg}apg, ${player.rpg}rpg, Salary: $<span id="salary">${player.salary}</span>M</p>
+            <p>${player.ppg}ppg, ${player.apg}apg, ${player.rpg}rpg, Salary: $<span id="salary">${parseFloat(player.salary).toFixed(2)}</span>M</p>
         </div>
     </div>
     `
@@ -94,10 +94,10 @@ tradeButton.addEventListener('click', function() {
 function teamTradeSalary(team1, team2) {
     let teamOneCheckboxes = document.querySelectorAll(`.${team1}-player-select-checkbox`);
     let teamTwoCheckboxes = document.querySelectorAll(`.${team2}-player-select-checkbox`);
-    let teamOneSalary = 0;
-    let teamTwoSalary = 0;
-    let teamOneSalaryToTrade = 0;
-    let teamTwoSalaryToTrade = 0;
+    let teamOneSalary = 0.00;
+    let teamTwoSalary = 0.00;
+    let teamOneSalaryToTrade = 0.00;
+    let teamTwoSalaryToTrade = 0.00;
     for (let checkbox of teamOneCheckboxes) {
         // if (checkbox.checked === true) {
         //     let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
@@ -105,7 +105,7 @@ function teamTradeSalary(team1, team2) {
         //     teamOneSalaryToTrade = teamOneSalaryToTrade + playerSalaryInt;
         // };
         let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
-        let playerSalaryInt = parseInt(playerSalary);
+        let playerSalaryInt = parseFloat2Decimals(playerSalary);
         teamOneSalary += playerSalaryInt;
         if (checkbox.checked === true) {
             teamOneSalaryToTrade = teamOneSalaryToTrade + playerSalaryInt;
@@ -117,7 +117,7 @@ function teamTradeSalary(team1, team2) {
         //     teamTwoSalaryToTrade = teamTwoSalaryToTrade + playerSalaryInt;
         // };
         let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
-        let playerSalaryInt = parseInt(playerSalary);
+        let playerSalaryInt = parseFloat2Decimals(playerSalary);
         teamTwoSalary += playerSalaryInt;
         if (checkbox.checked === true) {
             teamTwoSalaryToTrade = teamTwoSalaryToTrade + playerSalaryInt;
@@ -127,31 +127,41 @@ function teamTradeSalary(team1, team2) {
         return false;
     };
         let teamOneTradeText = document.getElementById("trade-block-1");
-        teamOneTradeText.textContent = `Salary to trade: $${teamOneSalaryToTrade}M`;
+        teamOneTradeText.textContent = `Salary to trade: $${parseFloat(teamOneSalaryToTrade).toFixed(2)}M`;
         let teamTwoTradeText = document.getElementById("trade-block-2");
-        teamTwoTradeText.textContent = `Salary to trade: $${teamTwoSalaryToTrade}M`;
+        teamTwoTradeText.textContent = `Salary to trade: $${parseFloat(teamTwoSalaryToTrade).toFixed(2)}M`;
 
-        let tradeResponse = document.getElementById("trade-response");
-        tradeResponse.innerHTML = `
-        <table>
+        let tradeDetails = document.getElementById("trade-response");
+        let teamOnePostTradeSalary = parseFloat(teamOneSalary - teamOneSalaryToTrade + teamTwoSalaryToTrade).toFixed(2);
+        let teamTwoPostTradeSalary = parseFloat(teamTwoSalary - teamTwoSalaryToTrade + teamOneSalaryToTrade).toFixed(2);
+        tradeDetails.innerHTML = `
+        <table id="table" class="borders">
             <tr>
                 <td>&nbsp;</td>
                 <th>Team 1</th>
                 <th>Team 2</th>
             </tr>
             <tr>
-                <th>Pre-trade salary</th>
-                <td>$${teamOneSalary}M</td>
-                <td>$${teamTwoSalary}M</td>
+                <th>Pre-trade salary:</th>
+                <td>$${parseFloat(teamOneSalary).toFixed(2)}M</td>
+                <td>$${parseFloat(teamTwoSalary).toFixed(2)}M</td>
             </tr>
             <tr>
-                <th>Salary to trade</th>
-                <td>$${teamOneSalaryToTrade}M</td>
-                <td>$${teamTwoSalaryToTrade}M</td>
+                <th>Post-trade salary:</th>
+                <td>$${teamOnePostTradeSalary}M</td>
+                <td>$${teamTwoPostTradeSalary}M</td>
             </tr>
         </table>
-        `
+        `;
 
-        console.log(teamOneSalaryToTrade, teamTwoSalaryToTrade);
-        return teamOneSalaryToTrade, teamTwoSalaryToTrade;
+        // let tradeResponse = document.getElementById("trade-response-container");
+        // if (teamOnePostTradeSalary > 190 || teamTwoPostTradeSalary > 190) {
+        //     tradeResponse.textContent = "Trade unsuccessful. Both teams must be below the $190M salary cap";
+        // } else {
+        //     tradeResponse.textContent = "Trade successful!";
+        // };
+};
+
+function parseFloat2Decimals(string){
+    return parseFloat(parseFloat(string).toFixed(2));
 };

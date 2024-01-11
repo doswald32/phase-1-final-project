@@ -116,6 +116,7 @@
     margin: 5px;
     height: 50%;
     vertical-align: middle;
+    text-align: bottom;
 }
 
 #trade-response {
@@ -158,4 +159,9 @@
 
 .player-select-checkbox {
     float: right;
+}
+
+#table {
+    width: 95%;
+    text-align: center;
 }
