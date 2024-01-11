@@ -2,11 +2,10 @@ function renderPlayers(team, player, num){
     //build player card
     let card = document.createElement('li');
     card.className = 'card';
-    //NEED TO UPDATE FORM ACTION WITH APPROPRIATE URL
     card.innerHTML = `
     <div class="card-container borders">
         <img id="player-image" src="${player.imageURL}">
-        <form id="checkbox" action="http://www.example.com/profile.php">
+        <form id="checkbox">
             <input id="${team}-player-select-checkbox-${player.id}" class="${team}-player-select-checkbox player-select-checkbox" type="checkbox" name="player-select" value="player-select" />
         </form>
         <div class="card-content">
@@ -18,9 +17,6 @@ function renderPlayers(team, player, num){
     //add player card to DOM
     let playerWindow = document.querySelector(`#player-window-${num}`);
     playerWindow.appendChild(card);
-
-    //add event listner to card
-    //card.addEventListener('click', () => console.log("test"));
 };
 
 function getTeamPlayers(team, num) {
@@ -87,19 +83,12 @@ let tradeButton = document.getElementById("trade-button");
 tradeButton.addEventListener('click', function() {
     let selectTargetOne = document.getElementById("select-1");
     let selectTargetTwo = document.getElementById("select-2");
-    // console.log(selectTarget.value);
+    if (selectTargetOne.value === "Blank" || selectTargetTwo.value === "Blank") {
+        alert("Please choose two different teams to execute a trade");
+    return 
+};
     sumOfTeamTradeSalary(selectTargetOne.value);
     sumOfTeamTradeSalary(selectTargetTwo.value);
-    // let playerCheckboxes = document.querySelectorAll(".player-select-checkbox");
-    // let salaryToTrade = 0;
-    // for (let checkbox of playerCheckboxes) {
-    //     if (checkbox.checked === true) {
-    //         let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
-    //         let playerSalaryInt = parseInt(playerSalary);
-    //         salaryToTrade = salaryToTrade + playerSalaryInt;
-    //     };
-    // };
-    // console.log(salaryToTrade);
 });
 
 function sumOfTeamTradeSalary(team) {
@@ -111,6 +100,10 @@ function sumOfTeamTradeSalary(team) {
             let playerSalaryInt = parseInt(playerSalary);
             salaryToTrade = salaryToTrade + playerSalaryInt;
         };
+    };
+    if (salaryToTrade === 0) {
+        alert("Please select at least one player to trade from each team");
+        return;
     };
     console.log(salaryToTrade);
     return salaryToTrade;
