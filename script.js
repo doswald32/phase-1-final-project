@@ -83,28 +83,75 @@ let tradeButton = document.getElementById("trade-button");
 tradeButton.addEventListener('click', function() {
     let selectTargetOne = document.getElementById("select-1");
     let selectTargetTwo = document.getElementById("select-2");
-    if (selectTargetOne.value === "Blank" || selectTargetTwo.value === "Blank") {
+    if (selectTargetOne.value === "Blank" || selectTargetTwo.value === "Blank" || selectTargetOne.value === selectTargetTwo.value) {
         alert("Please choose two different teams to execute a trade");
     return 
 };
-    sumOfTeamTradeSalary(selectTargetOne.value);
-    sumOfTeamTradeSalary(selectTargetTwo.value);
+    teamTradeSalary(selectTargetOne.value, selectTargetTwo.value);
 });
 
-function sumOfTeamTradeSalary(team) {
-    let playerCheckboxes = document.querySelectorAll(`.${team}-player-select-checkbox`);
-    let salaryToTrade = 0;
-    for (let checkbox of playerCheckboxes) {
+
+function teamTradeSalary(team1, team2) {
+    let teamOneCheckboxes = document.querySelectorAll(`.${team1}-player-select-checkbox`);
+    let teamTwoCheckboxes = document.querySelectorAll(`.${team2}-player-select-checkbox`);
+    let teamOneSalary = 0;
+    let teamTwoSalary = 0;
+    let teamOneSalaryToTrade = 0;
+    let teamTwoSalaryToTrade = 0;
+    for (let checkbox of teamOneCheckboxes) {
+        // if (checkbox.checked === true) {
+        //     let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
+        //     let playerSalaryInt = parseInt(playerSalary);
+        //     teamOneSalaryToTrade = teamOneSalaryToTrade + playerSalaryInt;
+        // };
+        let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
+        let playerSalaryInt = parseInt(playerSalary);
+        teamOneSalary += playerSalaryInt;
         if (checkbox.checked === true) {
-            let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
-            let playerSalaryInt = parseInt(playerSalary);
-            salaryToTrade = salaryToTrade + playerSalaryInt;
-        };
-    };
-    if (salaryToTrade === 0) {
+            teamOneSalaryToTrade = teamOneSalaryToTrade + playerSalaryInt;
+    }};
+    for (let checkbox of teamTwoCheckboxes) {
+        // if (checkbox.checked === true) {
+        //     let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
+        //     let playerSalaryInt = parseInt(playerSalary);
+        //     teamTwoSalaryToTrade = teamTwoSalaryToTrade + playerSalaryInt;
+        // };
+        let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
+        let playerSalaryInt = parseInt(playerSalary);
+        teamTwoSalary += playerSalaryInt;
+        if (checkbox.checked === true) {
+            teamTwoSalaryToTrade = teamTwoSalaryToTrade + playerSalaryInt;
+    }};
+    if (teamOneSalaryToTrade === 0 || teamTwoSalaryToTrade === 0) {
         alert("Please select at least one player to trade from each team");
-        return;
+        return false;
     };
-    console.log(salaryToTrade);
-    return salaryToTrade;
+        let teamOneTradeText = document.getElementById("trade-block-1");
+        teamOneTradeText.textContent = `Salary to trade: $${teamOneSalaryToTrade}M`;
+        let teamTwoTradeText = document.getElementById("trade-block-2");
+        teamTwoTradeText.textContent = `Salary to trade: $${teamTwoSalaryToTrade}M`;
+
+        let tradeResponse = document.getElementById("trade-response");
+        tradeResponse.innerHTML = `
+        <table>
+            <tr>
+                <td>&nbsp;</td>
+                <th>Team 1</th>
+                <th>Team 2</th>
+            </tr>
+            <tr>
+                <th>Pre-trade salary</th>
+                <td>$${teamOneSalary}M</td>
+                <td>$${teamTwoSalary}M</td>
+            </tr>
+            <tr>
+                <th>Salary to trade</th>
+                <td>$${teamOneSalaryToTrade}M</td>
+                <td>$${teamTwoSalaryToTrade}M</td>
+            </tr>
+        </table>
+        `
+
+        console.log(teamOneSalaryToTrade, teamTwoSalaryToTrade);
+        return teamOneSalaryToTrade, teamTwoSalaryToTrade;
 };
