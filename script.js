@@ -7,7 +7,7 @@ function renderPlayers(team, player, num){
     <div class="card-container borders">
         <img id="player-image" src="${player.imageURL}">
         <form id="checkbox" action="http://www.example.com/profile.php">
-            <input id="${team}-player-select-checkbox-${player.id}" class="player-select-checkbox" type="checkbox" name="player-select" value="player-select" />
+            <input id="${team}-player-select-checkbox-${player.id}" class="${team}-player-select-checkbox player-select-checkbox" type="checkbox" name="player-select" value="player-select" />
         </form>
         <div class="card-content">
             <p>${player.name}, ${player.position}, Age: ${player.age}</p>
@@ -85,7 +85,25 @@ teamSelectorTwo.addEventListener("change", function(e, team, num = 2){
 
 let tradeButton = document.getElementById("trade-button");
 tradeButton.addEventListener('click', function() {
-    let playerCheckboxes = document.querySelectorAll(".player-select-checkbox");
+    let selectTargetOne = document.getElementById("select-1");
+    let selectTargetTwo = document.getElementById("select-2");
+    // console.log(selectTarget.value);
+    sumOfTeamTradeSalary(selectTargetOne.value);
+    sumOfTeamTradeSalary(selectTargetTwo.value);
+    // let playerCheckboxes = document.querySelectorAll(".player-select-checkbox");
+    // let salaryToTrade = 0;
+    // for (let checkbox of playerCheckboxes) {
+    //     if (checkbox.checked === true) {
+    //         let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
+    //         let playerSalaryInt = parseInt(playerSalary);
+    //         salaryToTrade = salaryToTrade + playerSalaryInt;
+    //     };
+    // };
+    // console.log(salaryToTrade);
+});
+
+function sumOfTeamTradeSalary(team) {
+    let playerCheckboxes = document.querySelectorAll(`.${team}-player-select-checkbox`);
     let salaryToTrade = 0;
     for (let checkbox of playerCheckboxes) {
         if (checkbox.checked === true) {
@@ -95,4 +113,5 @@ tradeButton.addEventListener('click', function() {
         };
     };
     console.log(salaryToTrade);
-});
+    return salaryToTrade;
+};
