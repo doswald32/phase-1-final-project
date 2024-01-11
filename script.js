@@ -131,7 +131,7 @@ function teamTradeSalary(team1, team2) {
         let teamTwoTradeText = document.getElementById("trade-block-2");
         teamTwoTradeText.textContent = `Salary to trade: $${parseFloat(teamTwoSalaryToTrade).toFixed(2)}M`;
 
-        let tradeDetails = document.getElementById("trade-response");
+        let tradeDetails = document.getElementById("trade-details");
         let teamOnePostTradeSalary = parseFloat(teamOneSalary - teamOneSalaryToTrade + teamTwoSalaryToTrade).toFixed(2);
         let teamTwoPostTradeSalary = parseFloat(teamTwoSalary - teamTwoSalaryToTrade + teamOneSalaryToTrade).toFixed(2);
         tradeDetails.innerHTML = `
@@ -154,14 +154,17 @@ function teamTradeSalary(team1, team2) {
         </table>
         `;
 
-        // let tradeResponse = document.getElementById("trade-response-container");
-        // if (teamOnePostTradeSalary > 190 || teamTwoPostTradeSalary > 190) {
-        //     tradeResponse.textContent = "Trade unsuccessful. Both teams must be below the $190M salary cap";
-        // } else {
-        //     tradeResponse.textContent = "Trade successful!";
-        // };
+        let tradeResponse = document.getElementById("trade-response");
+        if (teamOnePostTradeSalary > 190 || teamTwoPostTradeSalary > 190) {
+            tradeResponse.textContent = "Trade unsuccessful. Both teams must be below the $190M salary cap";
+        } else {
+            tradeResponse.textContent = "Trade successful!";
+        };
 };
 
 function parseFloat2Decimals(string){
     return parseFloat(parseFloat(string).toFixed(2));
 };
+
+let resetButton = document.getElementById("reset-button");
+resetButton.addEventListener('click', () => window.location.reload());

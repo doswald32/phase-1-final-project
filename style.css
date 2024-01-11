@@ -1,5 +1,5 @@
 .borders {
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
 }
 
@@ -120,6 +120,10 @@
 }
 
 #trade-response {
+    text-align: center;
+}
+
+.trade-response {
     margin: 5px;
     height: 45%;
     vertical-align: middle;
