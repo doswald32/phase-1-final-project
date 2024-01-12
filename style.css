@@ -1,6 +1,4 @@
-.borders {
-    border-style: solid;
-    border-width: 1px;
+body {
     font-family: sans-serif;
 }
 
@@ -12,8 +10,6 @@
 
 #title {
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 #main {
