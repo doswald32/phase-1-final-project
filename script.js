@@ -100,11 +100,6 @@ function teamTradeSalary(team1, team2) {
     let teamOneSalaryToTrade = 0.00;
     let teamTwoSalaryToTrade = 0.00;
     for (let checkbox of teamOneCheckboxes) {
-        // if (checkbox.checked === true) {
-        //     let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
-        //     let playerSalaryInt = parseInt(playerSalary);
-        //     teamOneSalaryToTrade = teamOneSalaryToTrade + playerSalaryInt;
-        // };
         let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
         let playerSalaryInt = parseFloat2Decimals(playerSalary);
         teamOneSalary += playerSalaryInt;
@@ -112,11 +107,6 @@ function teamTradeSalary(team1, team2) {
             teamOneSalaryToTrade = teamOneSalaryToTrade + playerSalaryInt;
     }};
     for (let checkbox of teamTwoCheckboxes) {
-        // if (checkbox.checked === true) {
-        //     let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
-        //     let playerSalaryInt = parseInt(playerSalary);
-        //     teamTwoSalaryToTrade = teamTwoSalaryToTrade + playerSalaryInt;
-        // };
         let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
         let playerSalaryInt = parseFloat2Decimals(playerSalary);
         teamTwoSalary += playerSalaryInt;
@@ -163,13 +153,16 @@ function teamTradeSalary(team1, team2) {
         };
 };
 
+//function to add to decimal places to a number in another function
 function parseFloat2Decimals(string){
     return parseFloat(parseFloat(string).toFixed(2));
 };
 
+//Reset simulator by pressing 'Reset Simulator' button
 let resetButton = document.getElementById("reset-button");
 resetButton.addEventListener('click', () => window.location.reload());
 
+//Changing color of title by hovering with mouse
 let title = document.querySelector("#title");
 title.addEventListener("mouseover", function(e) {
     e.target.style.color='blue';
