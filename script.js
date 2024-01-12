@@ -156,7 +156,7 @@ function teamTradeSalary(team1, team2) {
 
         let tradeResponse = document.getElementById("trade-response");
         if (teamOnePostTradeSalary > 190 || teamTwoPostTradeSalary > 190) {
-            tradeResponse.textContent = "Trade unsuccessful. Both teams must be below the $190M salary cap";
+            tradeResponse.textContent = "Trade unsuccessful. The trade must result in both teams must being below the $190M salary cap. Please make another selection.";
         } else {
             tradeResponse.textContent = "Trade successful!";
         };
