@@ -1,9 +1,11 @@
 .borders {
-    border-style: none;
+    border-style: solid;
     border-width: 1px;
+    font-family: sans-serif;
 }
 
 #header {
+    display: inline-block;
     height: 12vh;
     width: 99%;
 }
@@ -95,7 +97,9 @@
 #trade-block {
     display: flex;
     justify-content: center;
+    text-align: center;
     margin: 5px;
+    font-size: small;
 }
 
 #trade-block-1 {
@@ -117,10 +121,12 @@
     height: 50%;
     vertical-align: middle;
     text-align: bottom;
+    font-size: small;
 }
 
 #trade-response {
     text-align: center;
+    font-size: large;
 }
 
 .trade-response {

@@ -78,17 +78,18 @@ teamSelectorTwo.addEventListener("change", function(e, team, num = 2){
     getTeamStats(team, num);
 });
 
-
-let tradeButton = document.getElementById("trade-button");
-tradeButton.addEventListener('click', function() {
-    let selectTargetOne = document.getElementById("select-1");
-    let selectTargetTwo = document.getElementById("select-2");
-    if (selectTargetOne.value === "Blank" || selectTargetTwo.value === "Blank" || selectTargetOne.value === selectTargetTwo.value) {
-        alert("Please choose two different teams to execute a trade");
-    return 
-};
+document.addEventListener('keydown', function(e) {
+    if (e.key === "Enter") {
+        console.log(e.key);
+        let selectTargetOne = document.getElementById("select-1");
+        let selectTargetTwo = document.getElementById("select-2");
+        if (selectTargetOne.value === "Blank" || selectTargetTwo.value === "Blank" || selectTargetOne.value === selectTargetTwo.value) {
+            alert("Please choose two different teams to execute a trade");
+        return;
+    };
     teamTradeSalary(selectTargetOne.value, selectTargetTwo.value);
-});
+}});
+    
 
 
 function teamTradeSalary(team1, team2) {
@@ -127,9 +128,9 @@ function teamTradeSalary(team1, team2) {
         return false;
     };
         let teamOneTradeText = document.getElementById("trade-block-1");
-        teamOneTradeText.textContent = `Salary to trade: $${parseFloat(teamOneSalaryToTrade).toFixed(2)}M`;
+        teamOneTradeText.innerHTML = `<b>Salary to trade:</b> $${parseFloat(teamOneSalaryToTrade).toFixed(2)}M`;
         let teamTwoTradeText = document.getElementById("trade-block-2");
-        teamTwoTradeText.textContent = `Salary to trade: $${parseFloat(teamTwoSalaryToTrade).toFixed(2)}M`;
+        teamTwoTradeText.innerHTML = `<b>Salary to trade:</b> $${parseFloat(teamTwoSalaryToTrade).toFixed(2)}M`;
 
         let tradeDetails = document.getElementById("trade-details");
         let teamOnePostTradeSalary = parseFloat(teamOneSalary - teamOneSalaryToTrade + teamTwoSalaryToTrade).toFixed(2);
@@ -138,8 +139,8 @@ function teamTradeSalary(team1, team2) {
         <table id="table" class="borders">
             <tr>
                 <td>&nbsp;</td>
-                <th>Team 1</th>
-                <th>Team 2</th>
+                <th><u>Team 1</u></th>
+                <th><u>Team 2</u></th>
             </tr>
             <tr>
                 <th>Pre-trade salary:</th>
@@ -168,3 +169,12 @@ function parseFloat2Decimals(string){
 
 let resetButton = document.getElementById("reset-button");
 resetButton.addEventListener('click', () => window.location.reload());
+
+let title = document.querySelector("#title");
+title.addEventListener("mouseover", function(e) {
+    e.target.style.color='blue';
+});
+title.addEventListener("mouseout", function(e) {
+    e.target.style.color='black';
+});
+
