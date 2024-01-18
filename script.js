@@ -157,9 +157,16 @@ function parseFloat2Decimals(string){
     return parseFloat(parseFloat(string).toFixed(2));
 };
 
-//Reset simulator by pressing 'Reset Simulator' button
+// Reset simulator by pressing 'Reset Simulator' button
 let resetButton = document.getElementById("reset-button");
-resetButton.addEventListener('click', () => window.location.reload());
+resetButton.addEventListener('click', function() {
+    let teamSelectors = document.querySelectorAll(".team-selector");
+    teamSelectors.forEach((element) => element.reset());
+    let playerWindows = document.querySelectorAll(".player-window");
+    playerWindows.forEach((element) => element.innerHTML = '');
+    let statsWindows = document.querySelectorAll(".team-stats");
+    statsWindows.forEach((element) => element.innerHTML = '');
+});
 
 //Changing color of title by hovering with mouse
 let title = document.querySelector("#title");
