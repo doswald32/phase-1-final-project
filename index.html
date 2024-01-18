@@ -6,25 +6,25 @@
     </head>
     <body>
         <!--HEADER-->
-        <div id="header" class="borders">
-            <h1 id="title" class="borders">NBA Trade Simulator</h1>
+        <div id="header">
+            <h1 id="title">NBA Trade Simulator</h1>
             <p>Press "Enter" key to execute trade</p>
         </div>
         
         <!--BULK CONTAINER FOR EVERYTHING UNDER HEADER-->
-        <main id="main" class="borders">
+        <main id="main">
             
             <!--TEAM ONE POSITIONING CONTAINER-->
-            <div class="main-containers borders">
+            <div class="main-containers">
                 <!--TEAM ONE CONTAINER-->
-                <div id="team-1" class="team-container borders">
+                <div id="team-1" class="team-container">
                     <!--TEAM SELECTOR CONTAINER-->
-                    <div id="team-select-container" class="team-selector borders" >
+                    <div id="team-select-container" class="team-selector" >
                         <!--need to update form action URL-->
-                        <form action="http://example.com/" id="team-selector-1" class="team-selector">
+                        <form id="team-selector-1" class="team-selector">
                             <label>Select team 1:&nbsp;</label> 
                             <select id="select-1" class="select" name="team-1">
-                                <option selected disabled hidden>Choose team...</option>
+                                <option value="Blank" selected disabled hidden>Choose team...</option>
                                 <option value="Bucks">Milwaukee Bucks</option>
                                 <option value="Bulls">Chicago Bulls</option>
                                 <option value="Cavaliers">Cleveland Cavaliers</option>
@@ -34,40 +34,40 @@
                         </form>
                     </div>
                     <!--TEAM PLAYER WINDOW-->
-                    <div id="player-window-1" class="player-window borders" ></div>
+                    <div id="player-window-1" class="player-window" ></div>
                     <!--TEAM STATS WINDOW-->
-                    <div id="team-stats-1" class="team-stats borders" ></div>
+                    <div id="team-stats-1" class="team-stats" ></div>
                 </div>
             </div>
             
             <!--TRADE POSITIONING CONTAINER-->
-            <div class="main-containers borders">
+            <div class="main-containers">
                 <!--TRADE CONTAINER-->
-                <div id="trade-container" class="borders">
-                    <div id="buttons" class="borders" >
+                <div id="trade-container">
+                    <div id="buttons">
                         <div class="form">    
                             <form id="reset"></form>
                             <button id="reset-button" class="button ">Reset Simulator</button>
                             </form>
                         </div>
                     </div>
-                    <div id="trade-block" class="borders">
-                        <div id="trade-block-1" class="borders" ></div>
-                        <div id="trade-block-2" class="borders" ></div>
+                    <div id="trade-block">
+                        <div id="trade-block-1"></div>
+                        <div id="trade-block-2"></div>
                     </div>
-                    <div id="trade-response-container" class="borders">
-                        <div id="trade-details" class=" trade-response borders"></div>
-                        <div id="trade-response" class="trade-response borders"></div>
+                    <div id="trade-response-container">
+                        <div id="trade-details" class="trade-response"></div>
+                        <div id="trade-response" class="trade-response"></div>
                     </div>
                 </div>
             </div>
                 
             <!--TEAM TWO POSITIONING CONTAINER-->
-            <div class="main-containers borders">
+            <div class="main-containers">
                 <!--TEAM TWO CONTAINER-->
-                <div id="team-2" class="team-container borders">
+                <div id="team-2" class="team-container">
                     <!--TEAM SELECTOR CONTAINER-->
-                    <div id="team-select-container" class="borders" >
+                    <div id="team-select-container">
                         <form id="team-selector-2" class="team-selector">
                             <label>Select team 2:&nbsp;</label> 
                             <select id="select-2" class="select" name="team-2">
@@ -81,9 +81,9 @@
                         </form>
                     </div>
                     <!--TEAM PLAYER WINDOW-->
-                    <div id="player-window-2" class="player-window borders" ></div>
+                    <div id="player-window-2" class="player-window" ></div>
                     <!--TEAM STATS WINDOW-->
-                    <div id="team-stats-2" class="team-stats borders" ></div>
+                    <div id="team-stats-2" class="team-stats" ></div>
                 </div>
             </div>
         </main>

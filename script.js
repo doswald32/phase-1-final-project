@@ -3,7 +3,7 @@ function renderPlayers(team, player, num){
     let card = document.createElement('li');
     card.className = 'card';
     card.innerHTML = `
-    <div class="card-container borders">
+    <div class="card-container">
         <img id="player-image" src="${player.imageURL}">
         <form id="checkbox">
             <input id="${team}-player-select-checkbox-${player.id}" class="${team}-player-select-checkbox player-select-checkbox" type="checkbox" name="player-select" value="player-select" />
@@ -35,7 +35,7 @@ function getTeamStats(team, num) {
     .then(res => res.json())
     .then(function(teamData){
         teamData.forEach(function(player){
-            teamPoints = teamPoints + player.ppg;
+            teamPoints += player.ppg;
             teamAssists += player.apg;
             teamRebounds += player.rpg;
             teamAge += player.age;
@@ -43,7 +43,7 @@ function getTeamStats(team, num) {
         });
         let teamStats = document.createElement('div');
         teamStats.innerHTML = `
-        <div class="stats-container borders">
+        <div class="stats-container">
             <p>Team: ${team}</p>
             <p>Average age: ${(Math.round(teamAge / teamData.length))}</p>
             <p>Stats - ppg: ${(Math.round(teamPoints * 100) / 100)}, apg: ${(Math.round(teamAssists * 100) / 100)}, rpg: ${(Math.round(teamRebounds * 100) / 100)}</p>
@@ -80,7 +80,6 @@ teamSelectorTwo.addEventListener("change", function(e, team, num = 2){
 
 document.addEventListener('keydown', function(e) {
     if (e.key === "Enter") {
-        console.log(e.key);
         let selectTargetOne = document.getElementById("select-1");
         let selectTargetTwo = document.getElementById("select-2");
         if (selectTargetOne.value === "Blank" || selectTargetTwo.value === "Blank" || selectTargetOne.value === selectTargetTwo.value) {
@@ -104,14 +103,14 @@ function teamTradeSalary(team1, team2) {
         let playerSalaryInt = parseFloat2Decimals(playerSalary);
         teamOneSalary += playerSalaryInt;
         if (checkbox.checked === true) {
-            teamOneSalaryToTrade = teamOneSalaryToTrade + playerSalaryInt;
+            teamOneSalaryToTrade += playerSalaryInt;
     }};
     for (let checkbox of teamTwoCheckboxes) {
         let playerSalary = checkbox.parentElement.parentElement.querySelector("#salary").textContent;
         let playerSalaryInt = parseFloat2Decimals(playerSalary);
         teamTwoSalary += playerSalaryInt;
         if (checkbox.checked === true) {
-            teamTwoSalaryToTrade = teamTwoSalaryToTrade + playerSalaryInt;
+            teamTwoSalaryToTrade += playerSalaryInt;
     }};
     if (teamOneSalaryToTrade === 0 || teamTwoSalaryToTrade === 0) {
         alert("Please select at least one player to trade from each team");
@@ -153,7 +152,7 @@ function teamTradeSalary(team1, team2) {
         };
 };
 
-//function to add to decimal places to a number in another function
+//function to add two decimal places to a number in another function
 function parseFloat2Decimals(string){
     return parseFloat(parseFloat(string).toFixed(2));
 };
