@@ -20,9 +20,12 @@ function renderPlayers(team, player, num){
 };
 
 function getTeamPlayers(team, num) {
-    fetch(`http://127.0.0.1:3000/${team}`)
+    fetch(`http://localhost:3000/${team}`)
     .then(res => res.json())
-    .then(teamData => teamData.forEach(player => renderPlayers(team, player, num)))
+    .then(teamData => {
+        teamData.forEach(player => {
+            renderPlayers(team, player, num)
+    })})
 };
 
 function getTeamStats(team, num) {
@@ -31,10 +34,10 @@ function getTeamStats(team, num) {
     let teamRebounds = 0;
     let teamAge = 0;
     let teamSalary = 0;
-    fetch(`http://127.0.0.1:3000/${team}`)
+    fetch(`http://localhost:3000/${team}`)
     .then(res => res.json())
     .then(function(teamData){
-        teamData.forEach(function(player){
+        teamData.forEach(player => {
             teamPoints += player.ppg;
             teamAssists += player.apg;
             teamRebounds += player.rpg;
@@ -57,7 +60,7 @@ function getTeamStats(team, num) {
 };
 
 const teamSelectorOne = document.querySelector("#select-1");
-teamSelectorOne.addEventListener("change", function(e, team, num = 1){
+teamSelectorOne.addEventListener("change",(e, team, num = 1) => {
     team = e.target.value;
     let statsWindow = document.querySelector(`#team-stats-${num}`);
     statsWindow.innerHTML = '';
@@ -68,7 +71,7 @@ teamSelectorOne.addEventListener("change", function(e, team, num = 1){
 });
 
 const teamSelectorTwo = document.querySelector("#select-2");
-teamSelectorTwo.addEventListener("change", function(e, team, num = 2){
+teamSelectorTwo.addEventListener("change",(e, team, num = 2) => {
     team = e.target.value;
     let statsWindow = document.querySelector(`#team-stats-${num}`);
     statsWindow.innerHTML = '';
@@ -78,7 +81,7 @@ teamSelectorTwo.addEventListener("change", function(e, team, num = 2){
     getTeamStats(team, num);
 });
 
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', (e) => {
     if (e.key === "Enter") {
         let selectTargetOne = document.getElementById("select-1");
         let selectTargetTwo = document.getElementById("select-2");
@@ -158,22 +161,30 @@ function parseFloat2Decimals(string){
 };
 
 // Reset simulator by pressing 'Reset Simulator' button
-let resetButton = document.getElementById("reset-button");
-resetButton.addEventListener('click', function() {
-    let teamSelectors = document.querySelectorAll(".team-selector");
+const resetButton = document.getElementById("reset-button");
+resetButton.addEventListener('click', () => {
+    const teamSelectors = document.querySelectorAll(".team-selector");
     teamSelectors.forEach((element) => element.reset());
-    let playerWindows = document.querySelectorAll(".player-window");
+    const playerWindows = document.querySelectorAll(".player-window");
     playerWindows.forEach((element) => element.innerHTML = '');
-    let statsWindows = document.querySelectorAll(".team-stats");
+    const statsWindows = document.querySelectorAll(".team-stats");
     statsWindows.forEach((element) => element.innerHTML = '');
+    const tradeBlockOne = document.getElementById("trade-block-1");
+    tradeBlockOne.innerHTML = '';
+    const tradeBlockTwo = document.getElementById('trade-block-2');
+    tradeBlockTwo.innerHTML = '';
+    const tradeDetails = document.getElementById('trade-details');
+    tradeDetails.innerHTML = '';
+    const tradeResponse = document.getElementById('trade-response');
+    tradeResponse.innerHTML = '';
 });
 
 //Changing color of title by hovering with mouse
 let title = document.querySelector("#title");
-title.addEventListener("mouseover", function(e) {
+title.addEventListener("mouseover", (e) => {
     e.target.style.color='blue';
 });
-title.addEventListener("mouseout", function(e) {
+title.addEventListener("mouseout", (e) => {
     e.target.style.color='black';
 });
 
